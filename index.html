@@ -209,7 +209,7 @@
       </div>
 
       <div id="section-header-2">
-        <h3>1.1 Context of Problem</h3>
+        <h3>2. Context of Problem</h3>
         <p>
           EV sales in South East Asia are set to approach 30% of all vehicle sales in 2030 under today’s policy settings (International Energy Association, 2025). 
           Back home, Singapore’s Green Plan 2030  targets a fully cleaner-energy vehicle fleet by 2040 (Land Transport Authority, 2025). 
@@ -235,7 +235,7 @@
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-3">
-        <h2>2. Concept Development</h2>
+        <h2>3. Concept Development</h2>
         <p>
           Upon assessment of the donor components, the chassis and fairings were selected for a redesign. 
           For the full systematic evaluation and decision-making process, see Appendix XX.
@@ -248,28 +248,50 @@
       <div id="sub-section-3-header-1">
         <h3>3.1 Chassis Concept Exploration</h3>  
         <p>
-          The concept evaluation of the structure and material of chassis can be seen in <i>Table 3.1</i>
+          The initial concept evaluation of the structure and material of chassis can be seen in <i>Table 3.1</i>
         </p>
           <image-component tag="image" source="assets/chassis_conceptselection.png"
           subtitle="Table 3.1: Chassis Structure and Material concept selection"></image-component>
         <p> 
-          The trellis frame is selected for its exemplary balance of structural rigidity, manufacturability, and cost-effectiveness, particularly suited to the unique requirements of electric motorcycle applications (Kulkarni, C., & Kanthale, V. S., 2024). 
-          This frame can be fabricated using straightforward tube welding processes that minimise production costs and complexity. 
-          The triangulated layout endows the chassis with outstanding torsional stiffness, which is essential for dynamic performance and safety, and the structure’s geometry can be systematically refined using iterative FEA to achieve optimal stress distribution and weight reduction (Kumar. et.al., 2018). 
-          Moreover, the open design of the trellis frame enables modular mounting and secure integration of core components such as the motor, battery, and controller, thereby enhancing flexibility for maintenance or system upgrades.
+          Initially, the welded steel trellis chassis was selected for its balance of structural rigidity, manufacturability, and cost-effectiveness (Kulkarni, C., & Kanthale, V. S., 2024). 
+          However, further design evaluation revealed several practical limitations. 
+          The chassis mass was comparatively high, at approximately 20 kg, which introduces a significant penalty in terms of energy consumption and overall vehicle efficiency.
         </p>
         <p>
-          Aluminium is selected for the electric bike frame due to its combination of low weight, high corrosion resistance, and cost-effectiveness, which directly improve energy efficiency, riding range, and durability in daily use. 
-          Its fabrication processes are well understood and enable modular integration of batteries and electronic systems, while the material’s rigidity ensures responsive handling and long-term structural safety (Ching Pang, G., & Weng Chun, T., 2023).
+          In addition to its weight disadvantage, the welded truss structure presented manufacturing and structural concerns. 
+          Welded joints are sensitive to distortion, alignment error, and heat-affected property changes, which can reduce dimensional accuracy and complicate assembly. 
+          As the design matured, these issues made the truss concept less suitable for a lightweight, high-efficiency chassis.
         </p>
+        <p>
+          Once these limitations were identified, a bonded aluminium chassis became a more convincing alternative. 
+          The key advantage was not simply that aluminium is lighter, but that the extrusion-and-bonding approach allows the material to be used more efficiently in a structural sense. 
+          The hollow extrusion geometry provides good stiffness without unnecessary mass, while epoxy bonding offers distributed load transfer and avoids heat-affected problems associated with welding.
+         </p>
+         <p>
+          The revised bonded aluminium concept was further supported by industry precedent. Lotus successfully demonstrated bonded aluminium chassis construction, showing that adhesive bonding can offer dimensional precision, reduced heat-affected damage, and improved load distribution compared with welding (Lotus, 2026). 
+          Based on this review, the design direction was revised from a steel truss to a bonded aluminium frame.
+        </p>
+        <p>The concept selection will be further justified by comparing the structural characteristics of the two chassis in the Testing section.</p>
+
+        <div id="sub-section-3-header-1-1">
+          <h3>3.1.1 EV Powertrain</h3>
+          <p>
+            Albeit out of our project scope, the following EV powertrain components have been selected to meet performance targets: EMRAX 228 motor, 150s5p battery pack (540 V nominal, 13.5 kWh), 16-tooth front sprocket with fixed 44-tooth rear sprocket (2.75:1 ratio), and 0.3 m rear wheel radius, targeting 250 km/h top speed. 
+            Detailed calculations are provided in Appendix XX.
+          </p>
+          <image-component tag="image" source="assets/fairing concept and material.png"
+          subtitle="Table 3.2: Fairing Structure and Material concept selection"></image-component>
+       
+
+
 
       <div id="sub-section-3-header-2">
         <h3>3.2 Fairing Concept Exploration</h3>
         <p>
-          The concept evaluation of the structure and material of fairing can be seen in <i>Table 3.2</i> and <i>Table XX</i> respectively.
+          The concept evaluation of the structure and material of fairing can be seen in <i>Table 3.2</i> .
         </p>  
-          <image-component tag="image" source="assets/fairing concept table.png"
-          subtitle="Table 3.2: Fairing Structure concept selection"></image-component>
+          <image-component tag="image" source="assets/fairing concept and material.png"
+          subtitle="Table 3.2: Fairing Structure and Material concept selection"></image-component>
         <p>
           In our early fairing concept explorations stage, we selected the full fairing (Appendix XX). 
           Upon further analysis, we narrowed it down to two technically viable directions within the sports series
@@ -296,7 +318,7 @@
         subtitle="Figure XX: Suzuki GSX-8S (Left), GSX-8R (Right)"></image-component>
         
         <p>
-          Fibreglass is selected as the fairing material due to its excellent balance of strength and low weight, ease of manufacturing using low-cost tooling, aerodynamic smoothness, and superior repairability compared to plastics and carbon fibre.
+          The fairing material concept selection narrowed down to fibreglass due to its excellent balance of strength and low weight, ease of manufacturing using low-cost tooling, aerodynamic smoothness, and superior repairability compared to plastics and carbon fibre.
           Moreover, it is affordable and supports iterative prototyping (Ferdaus, F. et al., 2021).
         </p>
   
@@ -311,26 +333,28 @@
         <h2>4. Prototypes </h2>
         <p>In this section, we will explore the different prototypes created through our development process.</p>
         <div id="sub-section-4-header-1">
-        <h3>Chassis Prototypes</h3>
-        <p>
-          To develop the initial chassis prototypes, the original ICE sports bike’s CAD model was used as the geometric baseline, with critical dimensions confirmed against the donor bike during our workshop session at Red Dot Mobility. These measurements established the swingarm pivot, rear damper mount, and front fork mount as the fixed anchor points of the vehicle. Because these interfaces are retained, the overall geometry—including wheelbase, rake, and trail—remains unchanged, preserving the motorcycle’s validated handling characteristics and dynamic performance. 
-        </p>
-        <p>   
-          Accordingly, the chassis was redesigned within these constraints to balance packaging efficiency, manufacturability and structural support for the electric powertrain. 
-          Our 3 chassis design prototypes can be seen in <i>Figure 4.1</i>.
-        </p>
-         <image-component tag="image" source="assets/chassis_prototypes.png"
-          subtitle="Table 4.1: Chassis Design Prototypes"></image-component>
-        <p>
-          Using the Weighted Decision Matrix, we compared the 3 chassis design prototypes across 5 different criterias as seen in <i>Table 4.2</i>.
-        </p>
-        <image-component tag="image" source="assets/pugh_matrixnew1.png"
-          subtitle="Table 4.2: Weighted Decision Matrix: Chassis Design Prototypes"></image-component>
-        <p>
-        <p>
-          Prototype 1 was selected for further development as it attained the highest overall weighted score, performing strongly in battery space, weight, fabrication ease, and cost. 
-          Although its structural rigidity is comparatively lower, this shortcoming is recognised and will be addressed through targeted refinement and iterative design in subsequent stages.
-        </p>
+        <h3>4.1 Chassis Prototypes</h3>
+      
+
+        <div id="sub-section-4-header-1-1">
+          <h3>4.1.1 CAD Prototype </h3>
+          <p>
+            Using the Weighted Decision Matrix, we compared the 2 chassis design prototypes across 4 different criterias as seen in <i>Table 4.2</i>.
+          </p>
+          <image-component tag="image" source="assets/chassis weighted matrix.png"
+            subtitle="Table 4.2: Weighted Decision Matrix: Chassis Design Prototypes"></image-component>
+          <p>
+          <p>
+            The bonded aluminium frame was selected due to its superior performance across critical design criteria. While both designs achieve excellent structural rigidity through trellis geometry, the bonded frame delivers substantial advantages in weight reduction and simplified manufacturability. 
+            The modest cost increase is acceptable given the performance gains, yielding a decisively higher weighted score that justifies progression to prototype fabrication.
+          </p>
+
+
+        <div id="sub-section-4-header-1-2">
+          <h3>4.1.2 Physical Prototype </h3>
+          <image-component tag="image" source="assets/chassis physical prototype.png"
+          subtitle="Table 4XX: Chassis' Idea to Proof-of-Concept detailed workflow"></image-component>
+
         <div id="sub-section-4-header-2">
         <h3> Iteration Process </h3>
         <p>
@@ -358,14 +382,17 @@
       <div>
       <div id="section-header-5">
         <h2>5. Testing & Analysis </h2>
-        <p>This section explores our testing and analysis process regarding the chassis design using Finite Element Analysis (FEA) on Solidworks.</p>
-      <div id="sub-section-5-header-1"></div>
-        <h3>5.1 Load Cases </h3>
+
+        <div id="section-header-5-1">
+          <h2>5.1 Chassis - FEA</h2>
+        <p>This section explores our testing and analysis process regarding the chassis design using FEA on Solidworks.</p>
+      <div id="sub-section-5-header-1-1"></div>
+        <h3>5.1.1 Load Cases </h3>
         <p>
           To evaluate the structural behaviour of the redesigned chassis under representative operating conditions, 3 standard static-equivalent load cases were selected: static loading, 1 g braking, and 3 g bump, as seen in <i>Table 5.1</i>. 
           These cases are widely used in early-stage motorcycle chassis assessment to approximate gravitational, longitudinal, and vertical impact loads in a controlled modelling environment (Cossalter, 2006).
         </p>
-         <image-component tag="image" source="assets/loadcases.png"
+         <image-component tag="image" source="assets/FEA load cases.png"
           subtitle="Table 5.1: Selected 3 Load Cases "></image-component>
 
       <div id="sub-section-5-header-2"></div>
@@ -499,7 +526,7 @@
           <sl-divider></sl-divider>
       <div>
       <div id="section-header-6">
-        <h2>6. Limitation and Mitigation Strategies</h2>
+        <h2>6. Validation</h2>
         <p>
           As this report represents the interim stage of the project, several aspects of the design remain under development. 
           The current work has focused on establishing the structural basis of the chassis through material selection and static FEA, which is necessary before dependent subsystems—such as the fairing, mounting features, and detailed packaging—can be advanced. 
@@ -529,36 +556,31 @@
 
 <sl-divider></sl-divider>
       <div id="section-header-7">
-        <h2>7. Project Plan</h2>
+        <h2>7. Fulfilment of Deliverables</h2>
           <p>
-            At this midpoint of the project, effort has centred on completing the chassis’ structural assessment, including material evaluation and static FEA. 
-            Fairing development and detailed component mounting will proceed in the next semester.
+            The intended deliverables of the project, together with their corresponding level of fulfilment, are presented in Table X.
           </p>
-      <div id="sub-section-7-header-1">
-        <h3>7.1 Fulfilment of Deliverables</h3>
-          <p>
-            At this stage, the project has met its key interim deliverables and is on schedule for prototype fabrication next semester. 
-            The fit and placement of major components within the chassis have been verified, FEA indicates the frame is structurally sound with a safety factor of at least 1 under the critical 3 g bump case, major components integration has been demonstrated, and the available battery volume falls within the energy range of comparable commercial models. 
-            A first-iteration full fairing has also been developed as a close-fitting wrap-around shell that hugs the chassis and major components, yielding a compact frontal area. 
-            By keeping the bodywork flush and avoiding unnecessary bulges, this concept is expected to limit drag through a low CdA, the main driver of aerodynamic resistance for motorcycles and bicycles (Cossalter, 2006). 
-            Simple weldments are used throughout, supporting small-batch manufacturability.
-          </p>
-          <p>
-            Taken together, these results show that the project has effectively fulfilled its interim goals and established a solid foundation for Semester 2. 
-            The next phase will focus on adding the mounting designs on chassis before fabrication, completing the detailed design of the fairing, and validating the current simulations. 
-            For the chassis, we plan to conduct basic stress–strain measurements using strain gauges to compare measured response against the FEA predictions. 
-            For the fairing, we will use CFD to assess the aerodynamic performance and verify that the proposed geometry achieves the intended low-drag behaviour. 
-            All of this will be carried out within the practical constraints of a single semester, limited manpower and a finite budget, with effort concentrated on delivering a buildable, testable prototype.
-          </p>
+          <image-component tag="image" source="assets/FOD.png"
+          subtitle="Figure 7XX: Fulfilment of Deliverables "></image-component>
 
       <div id="sub-section-7-header-2">
-        <h3>7.2 Gantt Chart</h3>
+        <h3>7.1 Gantt Chart</h3>
         <p>
           Our project timeline is summarised in <i>Figure 7.1</i>.
         </p>
         <image-component tag="image" source="assets/onlinegantt.png"
           subtitle="Figure 7.1: Project Timeline in Gantt Chart "></image-component>
 
+
+<sl-divider></sl-divider>
+          <div id="section-header-8">
+            <h2>8. Future Work</h2>
+              <p>
+                The potential gaps in the present study and the corresponding future work for improving the end product are outlined in Table X.
+              </p>
+              <image-component tag="image" source="assets/future work.png"
+              subtitle="Figure 7XX: Potential Future Work"></image-component>
+              
 
         
 
@@ -667,9 +689,9 @@ Zero motorcycles. MAH.COM.SG. (n.d.). https://mah.com.sg/brands-zero-motorcycles
           subtitle=" "></image-component>
 
         <p></p>
-        <image-component tag="image" source="assets/prototype 1 sketch p1.png"
+        <image-component tag="image" source="assets/appendix_prototype 1 sketch p1.png"
           subtitle=" "></image-component>
-        <image-component tag="image" source="assets/prototype 1 sketch p2.png"
+        <image-component tag="image" source="assets/appendix_prototype 1 sketch p2.png"
           subtitle=" Figure A: Sketch of Chassis Design Retaining Donor Chassis"></image-component>
 
       <h3>Appendix B: Theoretical Chassis Design </h3>
@@ -686,6 +708,18 @@ Zero motorcycles. MAH.COM.SG. (n.d.). https://mah.com.sg/brands-zero-motorcycles
       <h3>Appendix D: Welding and Jigs</h3>
         <image-component tag="image" source="assets/appendix_welding.png"
           subtitle=" "></image-component>
+
+      <h3>Appendix XX: Fairings Concept Selection - Moodboard</h3>
+          <p>Our moodboard which includes a diversity of motorbikes in the market to gather inspiration for our fairings designs.
+            The red circles indicate our selected concepts.
+          </p>
+              <image-component tag="image" source="assets/appendix_moodboard.png"
+                subtitle=" "></image-component>
+
+      <h3>Appendix XX: Chassis Physical Prototype - Bonding Plan</h3>
+      <p>Screenshot of the beginning of Bonding Plan which outlines the detailed choronological steps and desired sub-assemblies prior to full assembly.</p>
+          <image-component tag="image" source="assets/appendix_bonding plan.png"
+            subtitle=" "></image-component>
 
 
 
