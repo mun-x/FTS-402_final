@@ -517,30 +517,39 @@
               <image-component tag="image" source="assets/fairing CFD calculations.png"
               subtitle="Figure 7XX: Integrated Chassis "></image-component>
 
-
+              <image-component tag="image" source="assets/fairing boundary .png"
+              subtitle="Figure 7XX: Boundary Conditions "></image-component>
 
           <sl-divider></sl-divider>
       <div>
       <div id="section-header-6">
         <h2>6. Validation</h2>
-        <p>
-          As this report represents the interim stage of the project, several aspects of the design remain under development. 
-          The current work has focused on establishing the structural basis of the chassis through material selection and static FEA, which is necessary before dependent subsystems—such as the fairing, mounting features, and detailed packaging—can be advanced. 
-          The following subsections outline the principal limitations identified to date and the corresponding strategies planned to address them in the next phase of the project.
-        </p>
+
       <div id="sub-section-6-header-1">
         <h3>6.1 Chassis</h3>
         <p>
-          The current tubular chassis design, while structurally validated, requires multiple welding jigs to hold tubes at precise angles. 
-          To reduce manufacturing cost and complexity, the design will adopt simplified, sequentially assembled tube preforms that can be laid out on a welding table, reducing the need for complex 3D fixtures (Günther et al., 2020).
-        </p>
-        <p>
-          Static FEA alone is insufficient for analysis of the chassis, as it assumes ideal geometry, material uniformity, and fixed boundary conditions that overlook weld distortion and dynamic effects. 
-          Hence, the manufactured frame will be validated using a strain-gauge rig replicating the static, braking, and bump loads (Nguyen et al., 2018). 
-          Measured principal strains will be compared with FEA results, with deviations within 10–20 percent considered acceptable for model correlation. 
-          While ISO 4210-6 is a bicycle frame and fork standard, its fixture and load-introduction concepts will be adapted only as methodological guidance for rig design.
+          To validate the FEA predictions, two physical loading tests were conducted on the fabricated chassis. These tests were designed to reproduce representative loading conditions that the motorcycle chassis would experience in service, namely seat loading from the rider and loading at the fork mount during braking. 
+          In both cases, the measured chassis displacements were compared against the corresponding FEA results to assess whether the numerical model was able to capture the structural response of the chassis with reasonable accuracy.  
         </p>
 
+          <h3> Load Test 1: Seat Bending </h3>
+          <image-component tag="image" source="assets/load test 1.png"
+          subtitle="Figure 7XX: Boundary Conditions "></image-component> 
+          <image-component tag="image" source="assets/load test 1 results.png"
+          subtitle="Figure 7XX: Boundary Conditions "></image-component> 
+
+            <h3>Load Test 2: Braking Load </h3>
+            <image-component tag="image" source="assets/load test 2.png"
+            subtitle="Figure 7XX: Boundary Conditions "></image-component>
+            <image-component tag="image" source="assets/load test 2 results.png"
+            subtitle="Figure 7XX: Boundary Conditions "></image-component> 
+
+            <h3>Load Tests Conclusion </h3>
+            The comparison between FEA and load tests is summarised in Figure below.
+            <image-component tag="image" source="assets/load test conclusion.png"
+            subtitle="Figure 7XX: Boundary Conditions "></image-component> 
+
+  
       <div id="sub-section-6-header-2">
         <h3>6.2 Fairing</h3>
         <p>
