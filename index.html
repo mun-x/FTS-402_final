@@ -35,7 +35,9 @@
 
 <body>
   <div class="content">
-    <h1>FTS-402: Re-Design of Chassis and Fairings for ICE-to-Electric Motorbike Conversion</h1>
+    <h1>FTS-402: </h1>
+    <h1>Re-Design of Chassis and Fairings for ICE-to-E Motorbike Conversion</h1>
+    <h1></h1>
 
     <!-- This is the team member component use to display details about your team members -->
     <div class="team-member-wrapper">
@@ -68,13 +70,10 @@
 
         <sl-tree-item expanded>
           <a href="#section-header-1">1. Objective & Scope</a>
-          <sl-tree-item>
-            <a href="#sub-section-1-header-1">1.1. Context of Problem</a>
-          </sl-tree-item>
         </sl-tree-item> 
 
         <sl-tree-item>
-          <a href="#section-header-2">2. Methodology: Evaluation of Donor Components</a>
+          <a href="#section-header-2">2. Context of Problem</a>
         </sl-tree-item>
 
       <!--
@@ -178,15 +177,15 @@
       <div id="summary">
         <h2> Summary </h2>
         <p>  
-          This project focuses on the conversion of conventional internal combustion engine (ICE) sports bikes into electric sports bikes, or referred to as E-Bike in this report. 
-          The primary objective is to design a new chassis and fairing system that accommodates the EV powertrain specified by our industry partner, Red Dot Mobility.
+          This project focuses on the conversion of conventional internal combustion engine (ICE) sports bikes into its electric derivative. 
+          The primary objective includes the design of chassis and fairing system that accommodates the electric vehicle (EV) powertrain specified by our industry partner, Red Dot Mobility.
         </p>
         <p>
-          The redesigned chassis is engineered to integrate key electronic components such as the motor, controller, and battery pack, while optimising structural integrity. 
+          The redesigned chassis is engineered to integrate key electronic components such as the motor, controller, and battery pack, while keeping structural integrity in mind. 
           Building upon the chassis foundation, subsequent design phase explores the development of the fairing system with aerodynamics in mind.
         </p>  
         <p>
-        This project, undertaken over two academic semesters by a team of three mechanical engineering students, aims to employ FEA and CFD to validate the structural and aerodynamic performance of the E-Bike design.
+        Undertaken over two academic semesters by a team of three mechanical engineering students, aims to employ Finite Elemental Analysis (FEA) and Computational Fluid Dynamics (CFD) on Solidworks to validate the structural and aerodynamic performance.
         </p>
       </div>
     <sl-divider></sl-divider>
@@ -196,17 +195,23 @@
       <div id="section-header-1">
         <h2> 1. Objective & Scope </h2>
         <p>
-          This project addresses the challenge of mechanically realising the conversion of an existing 650cc ICE sports bike to electric drive using a fixed powertrain from Red Dot Mobility. 
-          The specification of the powertrain, which includes motor, controller and battery, establishes a fixed set of geometric, thermal, and load-bearing constraints. 
-          Within these parameters, the project focuses on the structural and aerodynamic redesign necessary to integrate these components effectively.
+          This project addresses the challenge of mechanically realising the conversion of an existing 650cc ICE sports bike to its electric derivative.
+          The EV powertrain provided by Red Dot Mobility, which includes motor, controller and battery, establishes a fixed set of geometric, load-bearing constraints and top speed of 220-250km/h. 
+          Within these parameters, the project focuses on the structural and aerodynamic redesign: namely chassis and fairing.
+        </p>
+        <p>  
+          The scope of this project is limited to the chassis and fairing redesign.
+          For the chassis, the project considers battery packaging, geometry, and powertrain mounting. 
+          For the fairing, the project considers aerodynamics, aesthetic. 
+          The project does not cover motor development, battery chemistry development, or full homologation testing.
         </p>
         
       </div>
 
-      <div id="sub-section-1-header-1">
+      <div id="section-header-2">
         <h3>1.1 Context of Problem</h3>
         <p>
-          EV SALES adoption of electric two-wheelers is accelerating with market expectations to reach US$150.3 billion by 2034, driven by policy shifts toward low-emission transport (Yahoo, 2025). 
+          EV sales in South East Asia are set to approach 30% of all vehicle sales in 2030 under today’s policy settings (International Energy Association, 2025). 
           Back home, Singapore’s Green Plan 2030  targets a fully cleaner-energy vehicle fleet by 2040 (Land Transport Authority, 2025). 
           Despite this momentum, the local electric motorcycle sector remains small and segmented.
         </p>
@@ -220,49 +225,22 @@
           Problem Statement:
         </b></p>
         <p><i>
-          How can we convert an existing ICE sports motorcycle into an electric version within the practical limits of cost, time, and manpower while ensuring safety, functionality, and integration of fixed components supplied by Red Dot Mobility.
+          How can we convert an existing ICE sports motorcycle into its electric derivative within the practical limits of cost, time, and manpower while ensuring safety, functionality, and integration of fixed components supplied by Red Dot Mobility.
         </i></p>
       </div>
 
-<sl-divider></sl-divider>
 
-      <div id="section-header-2">
-        <h2>2. Methodology: Evaluation of Donor Components</h2>
-        <p>
-          This section provides a summary of our evaluation and decision on whether each major component should be retained or redesigned for the electric conversion. 
-          The assessment in <i>Table 2.1</i> considers design constraints, manufacturability, and ease of sourcing. 
-      
-        </p>
-        <p>
-          For the full systematic evaluation and decision-making process, see <i>Appendix A</i>.
-        </p>
-
-        <image-component tag="image" source="assets/methodology_table_1.png"
-          subtitle="Table 2.1: Summary of existing major components evaluation"></image-component>
-        
-        <p>
-          To ground this assessment, we conducted an on-site visit to Red Dot Mobility’s workshop, as seen in <i>Figure 2.1</i>, measured the donor components to verify the CAD drawings given and photographed interfaces for later reference.
-        </p>
-        
-        <image-component tag="image" source="assets/RDM_ICE_workshop.png"
-          subtitle="Figure 2.1: Red Dot Mobility’s workshop, featuring their ICE sports bike"></image-component>
-    
-
-        
-
-        <!-- This is an example of how you might use the image component 
-        <image-component tag="image" source="assets/requirement.png"
-          subtitle="Figure 1: iDP suggested pathway"></image-component> -->
-      
-    </div>
 
     <br />
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-3">
-        <h2>3. Concept Development</h2>
+        <h2>2. Concept Development</h2>
         <p>
-          The subsystem review in the earlier section concluded that redesign efforts are necessary only for the chassis and fairing assemblies. 
+          Upon assessment of the donor components, the chassis and fairings were selected for a redesign. 
+          For the full systematic evaluation and decision-making process, see Appendix XX.
+        </p>
+        <p></p>  
           In this section, we will detail the chassis and fairing concept exploration.
         </p>
       </div>
@@ -288,32 +266,40 @@
       <div id="sub-section-3-header-2">
         <h3>3.2 Fairing Concept Exploration</h3>
         <p>
-          The concept evaluation of the structure and material of fairing can be seen in <i>Table 3.2</i>
+          The concept evaluation of the structure and material of fairing can be seen in <i>Table 3.2</i> and <i>Table XX</i> respectively.
         </p>  
-          <image-component tag="image" source="assets/fairing_conceptselection.png"
-          subtitle="Table 3.2: Fairing Structure and Material concept selection"></image-component>
+          <image-component tag="image" source="assets/fairing concept table.png"
+          subtitle="Table 3.2: Fairing Structure concept selection"></image-component>
         <p>
-          A full fairing is selected for its exceptional aerodynamic performance,which is vital for maximising efficiency and extending range in electric motorcycles (Martínez Reategui, C. et al., 2025), alongside its ability to provide comprehensive weather protection and improved rider comfort.
-          While it involves higher manufacturing complexity and cost, the gains in energy savings and overall riding experience justify its adoption in high-performance electric mobility applications.
+          In our early fairing concept explorations stage, we selected the full fairing (Appendix XX). 
+          Upon further analysis, we narrowed it down to two technically viable directions within the sports series
         </p>
+        <ol>
+          <li> 
+            <p>Naked Fairing concept</p>
+            Minimal upper body cover for simpler construction, lower part count and reduced visual bulk. 
+            Similar in philosophy to electric street motorcycles such as Zero SR/F (Zero Motorcycles, 2025) 
+
+          </li>
+          <li> 
+            <p>Full Fairing concept</p>
+            Greater surface coverage around the chassis for higher aerodynamic performance, stronger visual continuity. 
+            Taking inspiration from the fairings of racing motorcycles such as MotoGP Aprilia (Aprilia, 2022)
+          </li>
+        </ol>
+        
+        <p>In fact, this dual-variant approach is consistent with how established manufacturers position motorcycles for different rider demands. 
+          For example, Suzuki presents the GSX-8S as a naked streetfighter aimed at agility, urban use, and everyday riding;
+          while describing the GSX-8R as a sport-oriented derivative with a full fairing, sporty riding position, and wind-tunnel-refined aerodynamic bodywork based on the common platform (Suzuki Cycles, 2023). 
+        </p>
+        <image-component tag="image" source="assets/fairing suzuki.png"
+        subtitle="Figure XX: Suzuki GSX-8S (Left), GSX-8R (Right)"></image-component>
+        
         <p>
           Fibreglass is selected as the fairing material due to its excellent balance of strength and low weight, ease of manufacturing using low-cost tooling, aerodynamic smoothness, and superior repairability compared to plastics and carbon fibre.
           Moreover, it is affordable and supports iterative prototyping (Ferdaus, F. et al., 2021).
         </p>
-      <div id="sub-section-3-header-3">
-        <h3>3.3 Concept Selection</h3>
-        <p>
-          The design space for the chassis and fairing was systematically investigated using a Morphological Matrix in <i>Figure 3.3</i>. 
-          By mapping and combining functional alternatives, the selected solution (shown in blue) reflects a thorough evaluation of viable configurations.
-        </p>
-          <image-component tag="image" source="assets/a_conceptselection.png"
-          subtitle="Table 3.3: Morphological Matrix for concept selection"></image-component>
-        <p>
-          A summary of the key justifications for our selected solution can be seen in <i>Table 3.4</i> 
-        </p>
-          <image-component tag="image" source="assets/concept_selection_justification1.png"
-          subtitle="Table 3.4: Summary of key justifications for selected solution"></image-component>
-
+  
 
       </div>
     </div>
