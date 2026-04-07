@@ -96,59 +96,90 @@
           <sl-tree-item>
             <a href="#sub-section-3-header-2">3.2 Fairing Concept Exploration</a>
           </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-3-header-3">3.3 Concept Selection</a>
-          </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded> 
           <a href="#section-header-4">4. Prototypes</a>
           <sl-tree-item>
-            <a href="#sub-section-4-header-1">Chassis Prototypes</a>
+            <a href="#sub-section-4-header-1">4.1 Chassis Prototypes</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-4-header-2">Iteration Process</a>
+            <a href="#sub-section-4-header-1-1">4.1.1 Chassis - CAD </a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-4-header-1-2">4.1.1 Chassis - Physical </a>
+          </sl-tree-item>
+
+          <sl-tree-item>
+            <a href="#sub-section-4-header-2">4.2 Fairing Prototypes</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-4-header-2-1">4.2.1 Fairing - Naked Fairing </a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-4-header-2-2">4.2.2 Fairing - Full Fairing </a>
           </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded> 
           <a href="#section-header-5">5. Testing & Analysis</a>
           <sl-tree-item>
-            <a href="#sub-section-5-header-1">5.1 Load Cases</a>
+            <a href="#sub-section-5-header-1">5.1 Chassis Testing & Analysis</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-5-header-2">5.2 FEA - Methodology</a>
+            <a href="#sub-section-5-header-1-1">5.1.1 Chassis - Load Cases</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-5-header-3">5.3 FEA - Material Selection</a>
+            <a href="#sub-section-5-header-1-2">5.1.2 Chassis - FEA Methodology</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-5-header-4">5.4 FEA - Chassis Iteration Process</a>
+            <a href="#sub-section-5-header-1-3">5.1.3 Chassis - FEA: Bonded Aluminium vs Welded Steel</a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-5-header-5">5.5 FEA - Conclusion</a>
+            <a href="#sub-section-5-header-1-4">5.1.4 Chassis - FEA: Motor Loading</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-5-header-2">5.2 Fairing Testing & Analysis</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-5-header-2-1">5.2.1 Fairing - CFD Mesh & Computational Domain</a>
+          </sl-tree-item>          <sl-tree-item>
+            <a href="#sub-section-5-header-2-2">5.2.2 Fairing - CFD: Naked Fairing</a>
+          </sl-tree-item>          <sl-tree-item>
+            <a href="#sub-section-5-header-2-3">5.2.3 Fairing - CFD: Full Fairing</a>
+          </sl-tree-item>
+
+        </sl-tree-item>
+
+
+
+        <sl-tree-item expanded> 
+          <a href="#section-header-6">6.Validation</a>
+          <sl-tree-item>
+            <a href="#sub-section-6-header-1">6.1 Chassis Validation</a>
+          </sl-tree-item>
+          <sl-tree-item>
+            <a href="#sub-section-6-header-2">6.2 Fairing Validation</a>
           </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded> 
-          <a href="#section-header-6">6. Limitation & Mitigation Strategies</a>
+          <a href="#section-header-7">7. Fulfilment of Deliverables</a>
           <sl-tree-item>
-            <a href="#sub-section-6-header-1">6.1 Chassis</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-6-header-2">6.2 Fairing</a>
+            <a href="#sub-section-7-header-1">7.1 Project Timeline</a>
           </sl-tree-item>
         </sl-tree-item>
 
         <sl-tree-item expanded> 
-          <a href="#section-header-7">7. Project Plan</a>
-          <sl-tree-item>
-            <a href="#sub-section-7-header-1">7.1 Fulfilment of Deliverables</a>
-          </sl-tree-item>
-          <sl-tree-item>
-            <a href="#sub-section-7-header-2">7.2 Gantt Chart</a>
-          </sl-tree-item>
+          <a href="#section-header-8">8. Future Work</a>
         </sl-tree-item>
+
+        <sl-tree-item expanded> 
+          <a href="#section-header-9">9. Potential Impact</a>
+        </sl-tree-item>
+
+
+
 
         <sl-tree-item>
           <a href="#references">References</a>
@@ -205,11 +236,10 @@
           For the fairing, the project considers aerodynamics, aesthetic. 
           The project does not cover motor development, battery chemistry development, or full homologation testing.
         </p>
-        
       </div>
 
       <div id="section-header-2">
-        <h3>2. Context of Problem</h3>
+        <h2>2. Context of Problem</h2>
         <p>
           EV sales in South East Asia are set to approach 30% of all vehicle sales in 2030 under today’s policy settings (International Energy Association, 2025). 
           Back home, Singapore’s Green Plan 2030  targets a fully cleaner-energy vehicle fleet by 2040 (Land Transport Authority, 2025). 
@@ -274,7 +304,7 @@
         <p>The concept selection will be further justified by comparing the structural characteristics of the two chassis in the Testing section.</p>
 
         <div id="sub-section-3-header-1-1">
-          <h4>3.1.1 EV Powertrain</h4>
+          <h4>EV Powertrain</h4>
           <p>
             Albeit out of our project scope, the following EV powertrain components have been selected to meet performance targets: EMRAX 228 motor, 150s5p battery pack (540 V nominal, 13.5 kWh), 16-tooth front sprocket with fixed 44-tooth rear sprocket (2.75:1 ratio), and 0.3 m rear wheel radius, targeting 250 km/h top speed. 
             Detailed calculations are provided in Appendix XX.
