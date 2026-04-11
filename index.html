@@ -107,7 +107,7 @@
             <a href="#sub-section-4-header-1-1">4.1.1 Chassis - CAD </a>
           </sl-tree-item>
           <sl-tree-item>
-            <a href="#sub-section-4-header-1-2">4.1.1 Chassis - Physical </a>
+            <a href="#sub-section-4-header-1-2">4.1.2 Chassis - Physical </a>
           </sl-tree-item>
 
           <sl-tree-item>
@@ -361,7 +361,9 @@
         <p>In this section, we will explore the different prototypes, for both chassis and fairing created through our development process.</p>
         <div id="sub-section-4-header-1">
         <h3>4.1 Chassis Prototypes</h3>
-            Both CAD and physical prototypes were designed and built respectively, as seen in subsequent sub-sections.
+            <p>
+              Both CAD and physical prototypes were designed and built respectively, as seen in subsequent sub-sections.
+            </p>
         <div id="sub-section-4-header-1-1">
           <h3>4.1.1 CAD Prototype </h3>
           <p>
@@ -379,7 +381,9 @@
 
         <div id="sub-section-4-header-1-2">
           <h4>4.1.2 Physical Prototype </h4>
-          <p>The detailed workflow from Idea to Proof-of-Concept for our bonded aluminium chassis can be seen in <i>Figure 4.1.2.1.</i></p>
+          <p>
+            The detailed workflow from Idea to Proof-of-Concept for our bonded aluminium chassis can be seen in <i>Figure 4.1.2.1.</i><
+          </p>
           <image-component tag="image" source="assets/chassis physical prototype.png"
           subtitle="figure 4.1.2.1: Chassis' Idea to Proof-of-Concept detailed workflow"></image-component>
           <p>
@@ -507,14 +511,14 @@
             </p>
 
 
-      <div id="sub-section-5-header-3-4"></div>
+      <div id="sub-section-5-header-1-4"></div>
         <h3>5.1.4 FEA - Motor Loading </h3>
         <p>
           The final test case is the loading of the motor mount under the specified motor’s peak torque, which is 220 Nm, while the chassis is also under a static load of 1g.
         </p>
        
         <image-component tag="image" source="assets/chassis motor load.png"
-        subtitle="Figure 5.1.4.1:  Values obtained from ANSYS"></image-component>
+        subtitle="Figure 5.1.4.1:  Load case results"></image-component>
         <p>
           The final FEA case evaluates the chassis under the motor’s peak torque of 220 Nm, applied simultaneously with the 1g static chassis load. This case is particularly important because it represents the most direct transfer of drivetrain torque into the frame through the motor mount, making it a critical check for local structural integrity and load-path continuity. 
           The analysis shows a maximum von Mises stress of 33.9 MPa, which remains far below the aluminium yield strength of approximately 260 MPa, confirming that the chassis response is fully elastic under this combined loading condition.
@@ -525,7 +529,7 @@
         </p>
 
         <div id="section-header-5-1-5">
-        <h3>5.1.5 FEA - Conclusion</h3>
+        <h3>FEA - Conclusion</h3>
           <p>
             The FEA confirms the bonded aluminium chassis achieves excellent structural performance across all design load cases, including the motor mount evaluation under peak torque loading.
             Maximum von Mises stresses range from 25.7 MPa (static) to 77.0 MPa (3g bump) and 33.9 MPa (motor torque), with factors of safety from 3.37 to 10.09 which is substantially superior to the welded steel design’s peak stresses approaching 450 MPa and marginal FOS of 1.01 under equivalent conditions.
@@ -538,6 +542,7 @@
             <div id="section-header-5-2">
               <h2>5.2 CFD - Fairing</h2>
 
+              <div id="section-header-5-2-1"></div>
               <h2>5.2.1 CFD mesh and computational domain</h2>
               <p>
                 A summary of the CFD settings used consistently across all design iterations, Naked and Full Fairings alike, to
@@ -695,14 +700,6 @@
           <image-component tag="image" source="assets/FOD.png"
           subtitle="Figure 7.1: Summary of the project's fulfilment of deliverables "></image-component>
 
-      <div id="sub-section-7-header-2">
-        <h3>7.1 Gantt Chart</h3>
-        <p>
-          Our project timeline is summarised in <i>Figure 7.1.1</i>.
-        </p>
-        <image-component tag="image" source="assets/onlinegantt.png"
-          subtitle="Figure 7.1.1: Project Timeline in Gantt Chart "></image-component>
-
 
 <sl-divider></sl-divider>
           <div id="section-header-8">
@@ -796,8 +793,7 @@
           subtitle=" "></image-component>
 
       <h3>Appendix D: Welding and Jigs</h3>
-        <image-component tag="image" source="assets/appendix_welding.png"
-          subtitle=" "></image-component>
+
 
       <h3>Appendix E: Fairings Concept Selection - Moodboard</h3>
           <p>Our moodboard which includes a diversity of motorbikes in the market to gather inspiration for our fairings designs.
@@ -815,12 +811,12 @@
           <image-component tag="image" source="assets/appendix motogp rider.png"
             subtitle=" "></image-component>
 
-      <h3>Appendix : Fairing - Full Fairing iteration using CFD</h3>
+      <h3>Appendix H: Fairing - Full Fairing iteration using CFD</h3>
             <image-component tag="image" source="assets/appendix cfd full iteration.png"
               subtitle=" "></image-component>
 
               
-      <h3>Appendix : Initial Chassis Analysis (Welded Trellis Steel )</h3>
+      <h3>Appendix I: Initial Chassis Analysis (Welded Trellis Steel )</h3>
       
       <p>
         Below summaries the work done for our previous chassis concept that is no longer pursued. 
@@ -845,6 +841,8 @@
                 subtitle=" "></image-component>     
                 <image-component tag="image" source="assets/appendix old chassis prototype.png"
                 subtitle=" "></image-component>     
+                <image-component tag="image" source="assets/appendix_welding.png"
+                subtitle=" "></image-component>
                 
 
     
